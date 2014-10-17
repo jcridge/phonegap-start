@@ -44,13 +44,18 @@
         </script>
         
 		<script type="text/javascript">
-			var key = "Mike";
-			var value = " Linford";
-			window.localStorage.setItem( key, value );
+			//var key = "Mike";
+			//var value = " Linford";
+			//window.localStorage.setItem( key, value );
 			
-			document.write(key + value + "<br />");
+			var phoneType = window.localStorage.setItem("Phone", "iPhone");
+			var fruitType = window.localStorage.setItem("Fruit", "Banana");
+			var penType = window.localStorage.setItem("Pen", "Red");
+			var carType = window.localStorage.setItem("Car", "106");
+			var homeType = window.localStorage.setItem("Home","Hopton");
+			
+			document.write(phoneType.key + phoneType.Value + "<br />");
 			document.write(localStorage.length);
-			
         </script>
     </body>
 </html>
